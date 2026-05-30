@@ -1,0 +1,164 @@
+.buy-game{
+    padding: 50px 0;
+    background-color: #1b2838;
+    color: white;
+}
+
+.game-container{
+    width: 90%;
+    margin: auto;
+}
+
+.game-title{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.game-top{
+    display: flex;
+    gap: 30px;
+}
+
+.game-gallery{
+    flex: 2;
+}
+
+.main-image{
+    height: 450px;
+    background-color: #2a475e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: bold;
+    color: #c7d5e0;
+}
+
+.thumb-list{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumb-image{
+    width: 120px;
+    height: 70px;
+
+    background-color: #2a475e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #c7d5e0;
+    cursor: pointer;
+}
+
+.game-info{
+    flex: 1;
+}
+
+.game-logo{
+    height: 180px;
+    background-color: #2a475e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: #c7d5e0;
+}
+
+.game-info p{
+    line-height: 1.7;
+    color: #c7d5e0;
+}
+
+.game-meta{
+    margin-top: 20px;
+}
+
+.game-meta p{
+    margin-bottom: 10px;
+}
+
+.game-meta span{
+    color: #66c0f4;
+    font-weight: bold;
+}
+
+.buy-box{
+    margin-top: 40px;
+    background-color: #16202d;
+    padding: 20px;
+}
+
+.buy-box h2{
+    margin-bottom: 20px;
+}
+
+.buy-action{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.price{
+    background-color: black;
+    padding: 12px 20px;
+}
+
+.add-cart{
+    border: none;
+    padding: 12px 25px;
+    background-color: #5c7e10;
+    color: white;
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background-color: #6d9a13;
+}
+
+.game-description{
+    margin-top: 40px;
+}
+
+.game-description h2{
+    margin-bottom: 15px;
+}
+
+.game-description p{
+    margin-bottom: 15px;
+    color: #c7d5e0;
+    line-height: 1.7;
+}
+
+@media screen and (max-width: 768px){
+
+    .game-top{
+        flex-direction: column;
+    }
+
+    .main-image{
+        height: 250px;
+        font-size: 24px;
+    }
+
+    .game-logo{
+        height: 120px;
+    }
+
+    .thumb-image{
+        width: 80px;
+        height: 50px;
+        font-size: 12px;
+    }
+}

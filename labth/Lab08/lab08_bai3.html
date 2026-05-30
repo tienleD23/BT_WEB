@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle User Info</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            max-width: fit-content;
+            margin: 0 auto;
+            font-size: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: aliceblue;
+            margin-top: 20px;   
+            padding: 10px;
+            background-color: green;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            border-bottom: 1px solid;
+        }
+        #userinfo {
+            color: black;
+            background-color: lightgreen;
+            margin: 0;
+            padding: 20px;
+            text-align: left;
+            display: none; /* mặc định ẩn */
+        }
+        #btn_toggle {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>THÔNG TIN USER</h2>
+    <div id="userinfo"></div>
+    <button id="btn_toggle">Hiện thông tin</button>
+
+    <script>
+        const jsonString = `{
+            "ten": "Lê Minh Tiến",
+            "namsinh": "2005",
+            "mail": "dh52301984@student.stu.edu.vn",
+            "diachi": {
+                "thanhpho": "Tp.Hồ chí minh",
+                "phuong": "Phường Chánh hưng",
+                "sonha": "180 Cao lỗ"
+            }
+        }`;
+        const userData = JSON.parse(jsonString);
+
+        const btn_toggle = document.getElementById("btn_toggle");
+        const userDataElement = document.getElementById("userinfo");
+
+        btn_toggle.addEventListener("click", function() {
+            if (userDataElement.innerHTML === "") {
+                // hiện thông tin
+                userDataElement.style.display = "block"; //đặt lại display: block để hiện
+                userDataElement.innerHTML = `
+                    <p>Họ và tên: ${userData.ten}</p>
+                    <p>Năm sinh: ${userData.namsinh}</p>
+                    <p>Email: ${userData.mail}</p>
+                    <p>Địa chỉ: ${userData.diachi.sonha}, ${userData.diachi.phuong}, ${userData.diachi.thanhpho}</p>
+                `;
+
+                btn_toggle.textContent = "Ẩn thông tin";
+                btn_toggle.style.backgroundColor = "lightcoral";
+            } else {
+                // ẩn thông tin
+                userDataElement.style.display = "none"; // đặt lại none ẩn
+                userDataElement.innerHTML = "";
+                btn_toggle.textContent = "Hiện thông tin";
+                btn_toggle.style.backgroundColor = "green";
+            }
+        });
+    </script>
+</body>
+</html>

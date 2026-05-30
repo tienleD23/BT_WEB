@@ -1,0 +1,149 @@
+.cart{
+    background: linear-gradient(180deg,#162433,#0e1823);
+    color: white;
+    min-height: 700px;
+    padding: 50px 0;
+}
+
+.cart-container{
+    margin: auto;
+    max-width: 1250px;
+    width: 90%;
+}
+
+.cart-breadcrumb{
+    color: #7f98b3;
+    margin-bottom: 10px;
+}
+
+.cart-title{
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+.cart-content{
+    align-items: flex-start;
+    gap: 25px;
+    display: flex;
+}
+
+.cart-left{
+    flex: 3;
+}
+
+.cart-right{
+    border-radius: 8px;
+    background: #192634;
+    padding: 20px;
+    flex: 1;
+}
+
+.cart-item{
+    margin-bottom: 20px;
+    background: rgba(0,0,0,.2);
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    padding: 15px;
+}
+
+.cart-item img{
+    object-fit: cover;
+    border-radius: 6px;
+    height: 110px;
+    width: 250px;
+}
+
+.cart-info{
+    margin-left: 20px;
+    flex: 1;
+}
+
+.cart-info h3{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.cart-info p{
+    color: #93a5b7;
+}
+
+.cart-price{
+    min-width: 130px;
+    text-align: right;
+}
+
+.cart-price p{
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: white;
+}
+
+.cart-price a{
+    color: #66c0f4;
+    text-decoration: none;
+}
+
+.cart-price a:hover{
+    text-decoration: underline;
+}
+
+.summary-top{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.total-price{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.cart-right p{
+    color: #9db2c8;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.checkout-btn{
+    cursor: pointer;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 14px;
+    border-radius: 4px;
+    background: linear-gradient(to right,#06bfff,#2d73ff);
+}
+
+.checkout-btn:hover{
+    opacity: .9;
+}
+
+.cart-actions{
+    gap: 15px;
+    margin-top: 25px;
+    display: flex;
+}
+
+.continue-btn{
+    text-decoration: none;
+    background: #3b4a5b;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 28px;
+}
+
+.payment-btn{
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 28px;
+    background: linear-gradient(to right,#06bfff,#2d73ff);
+}
+
+.continue-btn:hover,
+.payment-btn:hover{
+    opacity: .9;
+}

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainClient</title>
+    <link rel="stylesheet" href="/css/client.css">
+    <link rel="stylesheet" href="/css/client-reponsive.css">
+    <script src="/js/client.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <a href="index.html" class="he"> <img class="logo" src="/images/Logo.png" alt=""></a>
+                <nav class="header-top-menu">
+                    <ul class="menu-item">
+                        <li><a class="active" href="index.html">STORE</a></li>
+                        <li><a href="/html/labth.html" >LAB-TH</a></li>
+                        <li><a href="/html/about.html">ABOUT</a></li>
+                        <li><a href="/html/buygame.html">SUPPORT</a></li>
+                        <li class="login-item"><a href="/html/login.html" target="_blank">Login</a> <img class="user-logo" src="/images/user.png"
+                                alt=""></li>
+                    </ul>
+                    <div class="top-menu-more" onclick="toggleTopMenu(topMenu)">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-bottom">
+                <nav class="header-bottom-menu">
+                    <ul class="menu-item">
+                        <li><a href="">Browse<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Recommendations<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Categories<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Ways to Play<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Special Section<i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                    <div class="bottom-menu-more" onclick="toggleBottomMenu(bottomMenu)">
+                        More<i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="search-box">
+                        <input class="search-bar" type="text" placeholder="search....">
+                        <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="wishlist">
+                        <a href="/html/cart.html"><i class="fa-solid fa-cart-shopping"></i></i>Cart</a>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="hero slider ">
+                <div class="banner">
+                    <video src="/video/banner/banner-video1.webm" autoplay muted loop playsinline></video>
+                </div>
+                <h5>Featured & Recommended</h5>
+                <div class="card-container">
+                    <button class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="wrapper">
+                        <div class="card-list">
+                            <a href="" class="card">
+                                <!-- anh chinh -->
+                                <div class="card-big-img">
+                                    <img src="/images/game-img/pokemon-champions/pokemon-champions-img1.jpg" alt="">
+                                </div>
+                                <!-- khung nay hien 1 vay thong tin game -->
+                                <div class="info-panel">
+                                    <!-- ten game -->
+                                    <h2>Pokemon Champions</h2>
+                                    <!-- them 4 cai anh khac cua game -->
+                                    <div class="preview-item">
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/pokemon-champions/pokemon-champions-img2.jpg"
+                                                alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/pokemon-champions/pokemon-champions-img2.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/pokemon-champions/pokemon-champions-img3.jpg"
+                                                alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/pokemon-champions/pokemon-champions-img3.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/pokemon-champions/pokemon-champions-img4.jpg"
+                                                alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/pokemon-champions/pokemon-champions-img4.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/pokemon-champions/pokemon-champions-img5.jpg"
+                                                alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/pokemon-champions/pokemon-champions-img5.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 1 mo ta nho ve game -->
+                                    <p>Now Avalibale</p>
+                                    <!-- tag the loai game -->
+                                    <div class="tag">
+                                        <p>Top Seller</p>
+                                        <p>PvP</p>
+                                        <P>Online</P>
+                                    </div>
+                                    <!-- gia game va nen tang choi duoc -->
+                                    <div class="price-platform">
+                                        <div class="price">
+                                            <p>-75%</p>
+                                            <P>6.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                            <p>1.500.000<i class="fa-solid fa-dong-sign"></i></p>
+                                        </div>
+                                        <div class="platform">
+                                            <i class="fa-brands fa-apple"></i>
+                                            <i class="fa-brands fa-microsoft"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <!-- anh chinh -->
+                                <div class="card-big-img">
+                                    <img src="/images/game-img/lol/lol-img1.jpg" alt="">
+                                </div>
+                                <!-- khung nay hien 1 vay thong tin game -->
+                                <div class="info-panel">
+                                    <!-- ten game -->
+                                    <h2>League of Legends WildRift</h2>
+                                    <!-- them 4 cai anh khac cua game -->
+                                    <div class="preview-item">
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/lol/lol-img2.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/lol/lol-img2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/lol/lol-img3.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/lol/lol-img3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/lol/lol-img4.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/lol/lol-img4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/lol/lol-img5.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/lol/lol-img5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 1 mo ta nho ve game -->
+                                    <p>Now Avalibale</p>
+                                    <!-- tag the loai game -->
+                                    <div class="tag">
+                                        <p>5vs5</p>
+                                        <p>Mobile</p>
+                                        <P>Online</P>
+                                    </div>
+                                    <!-- gia game va nen tang choi duoc -->
+                                    <div class="price-platform">
+                                        <div class="price">
+                                            <p></p>
+                                            <P></P>
+                                            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFree To Play</p>
+                                        </div>
+                                        <div class="platform">
+                                            <i class="fa-brands fa-apple"></i>
+                                            <i class="fa-brands fa-microsoft"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <!-- anh chinh -->
+                                <div class="card-big-img">
+                                    <img src="/images/game-img/dead-cell/dead-cells-img1.jpg" alt="">
+                                </div>
+                                <!-- khung nay hien 1 vay thong tin game -->
+                                <div class="info-panel">
+                                    <!-- ten game -->
+                                    <h2>Dead Cells</h2>
+                                    <!-- them 4 cai anh khac cua game -->
+                                    <div class="preview-item">
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/dead-cell/dead-cells-img2.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/dead-cell/dead-cells-img2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/dead-cell/dead-cells-img3.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/dead-cell/dead-cells-img3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/dead-cell/dead-cells-img4.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/dead-cell/dead-cells-img4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/dead-cell/dead-cells-img5.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/dead-cell/dead-cells-img5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 1 mo ta nho ve game -->
+                                    <p>Now Avalibale</p>
+                                    <!-- tag the loai game -->
+                                    <div class="tag">
+                                        <p>Top Seller </p>
+                                        <p>RPG </p>
+                                        <p>Roguelike </p>
+                                        <P>Offline </P>
+                                    </div>
+                                    <!-- gia game va nen tang choi duoc -->
+                                    <div class="price-platform">
+                                        <div class="price">
+                                            <p>-10%</p>
+                                            <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                            <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                        </div>
+                                        <div class="platform">
+                                            <i class="fa-brands fa-apple"></i>
+                                            <i class="fa-brands fa-microsoft"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="card">
+                                <!-- anh chinh -->
+                                <div class="card-big-img">
+                                    <img src="/images/game-img/monster/monster-img1.jpg" alt="">
+                                </div>
+                                <!-- khung nay hien 1 vay thong tin game -->
+                                <div class="info-panel">
+                                    <!-- ten game -->
+                                    <h2>Monster</h2>
+                                    <!-- them 4 cai anh khac cua game -->
+                                    <div class="preview-item">
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/monster/monster-img2.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/monster/monster-img2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/monster/monster-img3.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/monster/monster-img3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/monster/monster-img4.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/monster/monster-img4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="preview-img">
+                                            <img src="/images/game-img/monster/monster-img5.jpg" alt="">
+                                            <div class="big-preview-img">
+                                                <img src="/images/game-img/monster/monster-img5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 1 mo ta nho ve game -->
+                                    <p>Now Avalibale</p>
+                                    <!-- tag the loai game -->
+                                    <div class="tag">
+                                        <p>Top Seller </p>
+                                        <p>RPG </p>
+                                        <p>Roguelike </p>
+                                        <P>Offline </P>
+                                    </div>
+                                    <!-- gia game va nen tang choi duoc -->
+                                    <div class="price-platform">
+                                        <div class="price">
+                                            <p>-30%</p>
+                                            <P>3.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                            <p>2.100.000<i class="fa-solid fa-dong-sign"></i></p>
+                                        </div>
+                                        <div class="platform">
+                                            <i class="fa-brands fa-apple"></i>
+                                            <i class="fa-brands fa-microsoft"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <button class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="card-dots">
+                    <span class="dot active"><i class="fa-solid fa-square"></i></span>
+                    <span class="dot"><i class="fa-solid fa-square"></i></span>
+                    <span class="dot"><i class="fa-solid fa-square"></i></span>
+                    <span class="dot"><i class="fa-solid fa-square"></i></span>
+                </div>
+                <div class="small-banner">
+                    <img src="/images/banner/banner1.jpg" alt="">
+                </div>
+            </section>
+            <section class="discounts slider">
+                <h5>Discounts</h5>
+                <div class="card-container">
+                    <button class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="wrapper">
+                        <div class="card-list">
+
+                            <div class="card">
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/pokemon-champions/pokemon-champions-img1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Today's deal</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-75%</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>6.000.000<i class="fa-solid fa-dong-sign"></i></p>
+                                                <p>1.500.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/dead-cell/dead-cells-img1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Today's deal</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/monster/monster-img1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Until 29/5</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-30%</p>
+                                            </div>
+                                            <div class="price">
+
+
+                                                <P>3.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>2.100.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/game1/game1-img1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Unitl 30/5</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/eva/eva1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Until 5/6</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/game2/game2-img1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Until 5/6</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+
+                            </div>
+
+
+                            <div class="card">
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/genshin/genshin1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Until 5/6</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/ww/ww1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Until 5/6</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/cyperpunk/cyperpunk1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Until 5/6</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/htr/htr1.jpg" alt="">
+                                    <div class="item-info">
+                                        <div class="offer-day">
+                                            <p>Until 5/6</p>
+                                        </div>
+                                        <div class="price-info">
+                                            <div class="perc-disc">
+                                                <p>-10%</p>
+                                            </div>
+                                            <div class="price">
+
+                                                <P>2.000.000<i class="fa-solid fa-dong-sign"></i></P>
+                                                <p>1.800.000<i class="fa-solid fa-dong-sign"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="card-dots">
+                    <span class="dot active"><i class="fa-solid fa-square"></i></span>
+                    <span class="dot"><i class="fa-solid fa-square"></i></span>
+                </div>
+            </section>
+            <section class="browse-by-bate slider">
+                <h5>Browse by Category</h5>
+
+                <div class="browse-container">
+
+                    <button class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div class="wrapper">
+                        <div class="card-list">
+
+                            <div class="card">
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/dead-cell/dead-cells-img3.jpg" alt="">
+                                    <p>RPG</p>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/lol/lol-img4.jpg" alt="">
+                                    <p>Online</p>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/monster/monster-img4.jpg" alt="">
+                                    <p>Offline</p>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/ww/ww1.jpg" alt="">
+                                    <p>Anime</p>
+                                </a>
+
+                            </div>
+
+                            <div class="card">
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/game2/game2-img1.jpg" alt="">
+                                    <p>Roguelike</p>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/htr/htr1.jpg" alt="">
+                                    <p>TurnBase</p>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/eva/eva1.jpg" alt="">
+                                    <p>famlily</p>
+                                </a>
+                                <a href="" class="card-item">
+                                    <img src="/images/game-img/pokemon-champions/pokemon-champions-img4.jpg" alt="">
+                                    <p>pokemon</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+                <div class="card-dots">
+                    <span class="dot active"><i class="fa-solid fa-square"></i></span>
+                    <span class="dot"><i class="fa-solid fa-square"></i></span>
+                </div>
+
+            </section>
+
+            <section class="top-releases slider">
+
+                <h5>Top New Releases April 2026</h5>
+
+                <div class="releases-container">
+
+                    <button class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div class="wrapper">
+                        <div class="card-list">
+
+                            <div class="card">
+                                <a href="">
+                                    <img src="/images/game-img/pokemon-champions/pokemon-champions-img7.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="">
+                                    <img src="/images/game-img/genshin/genshin2.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="">
+                                <img src="/images/game-img/htr/htr2.jpg" alt="">
+                            </a>
+                            <div class="card">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+                <div class="card-dots">
+                    <span class="dot active"><i class="fa-solid fa-square"></i></span>
+                    <span class="dot"><i class="fa-solid fa-square"></i></span>
+                    <span class="dot"><i class="fa-solid fa-square"></i></span>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <img src="/images/Logo.png" alt="">
+                <p>Discover and explore amazing games.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="">Store</a>
+                <a href="">Categories</a>
+                <a href="">Discounts</a>
+            </div>
+
+            <div class="footer-support">
+                <h4>Support</h4>
+                <a href="">Help Center</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p> 2026 GameStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</body>
+
+</html>

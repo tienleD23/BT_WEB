@@ -1,0 +1,101 @@
+.login{
+    min-height: 700px;
+    background: #1b2838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.login-box{
+    width: 900px;
+    background: #171a21;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.login-box h1{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.login-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.login-form{
+    flex: 1;
+}
+
+.login-form label,
+.login-qr label{
+    display: block;
+    color: #1a9fff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    width: 100%;
+    height: 45px;
+    background: #32353c;
+    border: none;
+    color: white;
+    padding: 0 12px;
+    margin-bottom: 20px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #c7d5e0;
+    margin-bottom: 25px;
+}
+
+.login-form button{
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(to right,#06bfff,#2d73ff);
+}
+
+.login-form a{
+    display: block;
+    margin-top: 25px;
+    color: #8f98a0;
+    text-decoration: none;
+}
+
+.login-qr{
+    width: 250px;
+    text-align: center;
+}
+
+.qr-box{
+    width: 200px;
+    height: 200px;
+    background: white;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.login-qr p{
+    color: #c7d5e0;
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainClient</title>
+    <link rel="stylesheet" href="/css/client.css">
+    <link rel="stylesheet" href="/css/labth.css">
+    <link rel="stylesheet" href="/css/client-reponsive.css">
+    <script src="/js/client.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <a href="index.html" class="he"> <img class="logo" src="/images/Logo.png" alt=""></a>
+                <nav class="header-top-menu">
+                    <ul class="menu-item">
+                        <li><a  href="index.html">STORE</a></li>
+                        <li><a class="active" href="">LAB-TH</a></li>
+                        <li><a href="/html/about.html">ABOUT</a></li>
+                        <li><a href="">SUPPORT</a></li>
+                        <li class="login-item"><a href="/html/login.html" target="_blank">Login</a> <img class="user-logo" src="/images/user.png"
+                                alt=""></li>
+                    </ul>
+                    <div class="top-menu-more" onclick="toggleTopMenu(topMenu)">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-bottom">
+                <nav class="header-bottom-menu">
+                    <ul class="menu-item">
+                        <li><a href="">Browse<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Recommendations<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Categories<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Ways to Play<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Special Section<i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                    <div class="bottom-menu-more" onclick="toggleBottomMenu(bottomMenu)">
+                        More<i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="search-box">
+                        <input class="search-bar" type="text" placeholder="search....">
+                        <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="wishlist">
+                        <a href="/html/cart.html"><i class="fa-solid fa-cart-shopping"></i></i>Cart</a>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-container">
+<section class="lab-th">
+    <div class="lab-container">
+        <h1 class="lab-title">DANH SÁCH BÀI THỰC HÀNH</h1>
+
+        <div class="lab-grid">
+
+            <!-- Lab1 -->
+            <div class="lab-card">
+                <h3>Lab01: HTML cơ bản</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab01/Lab01/Vi_du/index.html" target="_blank">
+                            Bài thực hành 1.1
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+            <!-- Lab2 -->
+            <div class="lab-card">
+                <h3>Lab02: Table & List</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab02/Lab02/lab02_bai1.html" target="_blank">
+                            Bài thực hành 2.1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab02/Lab02/lab02_bai2.html" target="_blank">
+                            Bài thực hành 2.2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab02/Lab02/lab02_bai3.html" target="_blank">
+                            Bài thực hành 2.3
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+            <!-- Lab3 -->
+            <div class="lab-card">
+                <h3>Lab03: Frame & Form</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab03/lab03_bai1.html" target="_blank">
+                            Bài thực hành 3.1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab03/lab03_bai2.html" target="_blank">
+                            Bài thực hành 3.2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab03/lab03_bai3.html" target="_blank">
+                            Bài thực hành 3.3
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+            <!-- Lab4 -->
+            <div class="lab-card">
+                <h3>Lab04: CSS cơ bản</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab04/lab04_bai1.html" target="_blank">
+                            Bài thực hành 4.1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab04/lab04_bai2.html" target="_blank">
+                            Bài thực hành 4.2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab04/lab04_bai3.html" target="_blank">
+                            Bài thực hành 4.3
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+            <!-- Lab5 -->
+            <div class="lab-card">
+                <h3>Lab05: Các thuộc tính CSS</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab05/lab05_menu.html">
+                            Bài thực hành 5.1
+                        </a>
+                    </li>
+                    <li>Bài thực hành 5.2</li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+            <!-- Lab6 -->
+            <div class="lab-card">
+                <h3>Lab06: Layout Website</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab06/lab06_menu_responsive.html" target="_blank">
+                            Bài thực hành 6.1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab06/lab06_bai2.html" target="_blank">
+                            Bài thực hành 6.2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab06/lab06_bai3.html" target="_blank">
+                            Bài thực hành 6.3
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+            <!-- Lab7 -->
+            <div class="lab-card">
+                <h3>Lab07: JavaScript cơ bản</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab07/Vi_du/lab7_1.html" target="_blank">
+                            Bài thực hành 7.1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab07/demo_bai_2/lab7_2.html" target="_blank">
+                            Bài thực hành 7.2
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+            <!-- Lab8 -->
+            <div class="lab-card">
+                <h3>Lab08: Dự án tổng hợp</h3>
+                <ul>
+                    <li>
+                        <a href="/labth/Lab08/lab08_bai1.html" target="_blank">
+                            Bài thực hành 8.1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab08/lab08_bai2.html" target="_blank">
+                            Bài thực hành 8.2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/labth/Lab08/lab08_bai3.html" target="_blank">
+                            Bài thực hành 8.3
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="lab-btn">Xem chi tiết</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <img src="/images/Logo.png" alt="">
+                <p>Discover and explore amazing games.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="">Store</a>
+                <a href="">Categories</a>
+                <a href="">Discounts</a>
+            </div>
+
+            <div class="footer-support">
+                <h4>Support</h4>
+                <a href="">Help Center</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p> 2026 GameStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</body>
+
+</html>

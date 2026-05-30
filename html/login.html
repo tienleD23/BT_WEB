@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainClient</title>
+    <link rel="stylesheet" href="/css/client.css">
+    <link rel="stylesheet" href="/css/client-reponsive.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="/js/client.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <a href="index.html" class="he"> <img class="logo" src="/images/Logo.png" alt=""></a>
+                <nav class="header-top-menu">
+                    <ul class="menu-item">
+                        <li><a class="active" href="index.html">STORE</a></li>
+                        <li><a href="/html/labth.html" >LAB-TH</a></li>
+                        <li><a href="/html/about.html">ABOUT</a></li>
+                        <li><a href="">SUPPORT</a></li>
+                        <li class="login-item"><a href="/html/login.html" target="_blank">Login</a> <img class="user-logo" src="/images/user.png"
+                                alt=""></li>
+                    </ul>
+                    <div class="top-menu-more" onclick="toggleTopMenu(topMenu)">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-bottom">
+                <nav class="header-bottom-menu">
+                    <ul class="menu-item">
+                        <li><a href="">Browse<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Recommendations<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Categories<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Ways to Play<i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a href="">Special Section<i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                    <div class="bottom-menu-more" onclick="toggleBottomMenu(bottomMenu)">
+                        More<i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="search-box">
+                        <input class="search-bar" type="text" placeholder="search....">
+                        <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="wishlist">
+                        <a href="/html/cart.html"><i class="fa-solid fa-cart-shopping"></i></i>Cart</a>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-container">
+<section class="login">
+    <div class="login-box">
+
+        <h1>Đăng nhập</h1>
+
+        <div class="login-content">
+
+            <div class="login-form">
+
+                <label>ĐĂNG NHẬP BẰNG TÊN TÀI KHOẢN</label>
+                <input type="text">
+
+                <label>MẬT KHẨU</label>
+                <input type="password">
+
+                <div class="remember">
+                    <input type="checkbox" checked>
+                    <span>Ghi nhớ tôi</span>
+                </div>
+
+                <button>Đăng nhập</button>
+
+                <a href="#">Giúp với, tôi không thể đăng nhập</a>
+
+            </div>
+
+            <div class="login-qr">
+
+                <label>HOẶC ĐĂNG NHẬP BẰNG QR</label>
+
+                <div class="qr-box">
+                    QR
+                </div>
+
+                <p>
+                    Đăng nhập bằng mã QR với ứng dụng Steam di động
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-about">
+                <img src="/images/Logo.png" alt="">
+                <p>Discover and explore amazing games.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="">Store</a>
+                <a href="">Categories</a>
+                <a href="">Discounts</a>
+            </div>
+
+            <div class="footer-support">
+                <h4>Support</h4>
+                <a href="">Help Center</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p> 2026 GameStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</body>
+
+</html>

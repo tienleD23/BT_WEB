@@ -1,0 +1,48 @@
+.hori {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.hori li {
+    padding: 10px 20px;
+    background-color: rgb(112, 211, 178);
+}
+
+.hori li a {
+    text-decoration: none;
+    color: black;
+}
+
+.hori li:hover {
+    background-color: rgb(185, 185, 27);
+    border-radius: 10px;
+}
+
+.hori li a:hover {
+    font-weight: bold;
+}
+
+.verti {
+    list-style: none;
+    padding: 0;
+    width: 200px;
+}
+
+.verti li {
+    padding: 10px;
+    margin-bottom: 1px;
+    background-color: rgb(204, 219, 247);
+    transition: all 0.3s ease;
+}
+
+.verti li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.verti li:hover {
+    background-color: rgb(149, 211, 211);
+    filter: brightness(1.3);
+}
